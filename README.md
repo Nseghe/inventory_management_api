@@ -18,12 +18,11 @@ npm run test
 `
 npm run build
 `.
-Production build artifacts are stored in the "dist" folder.
 
 5. To start the production server, use the following command
 `
 npm run start
-`
+`.
 
 ## Public URL
 This API is hosted publicly on the Heroku Cloud Infrastructure [here](https://dcs-ta-bem202103.herokuapp.com/).
