@@ -5,6 +5,7 @@ Endpoints:
 - /:item/quantity - get quantity of "item" in DB 
 - /:item/add - add specified quantiy of "item" to DB
 - /:item/sell - sell specified quantity of "item" in DB
+
 Expired items are deleted from DB by a cron job running once daily.
 
 Reach out to me for more details.
