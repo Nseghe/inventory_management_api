@@ -1,5 +1,11 @@
-# Perishable Inventory API in NodeJS
-Task 1 of the Deep Consulting Solutions Assessment
+# Perishable Inventory API in NodeJS (TypeScript)
+Perishable Inventory Management API in TypeScript/NodeJS.
+Endpoints:
+- /:item/quantity - get quantity of "item" in DB 
+- /:item/add - add specified quantiy of "item" to DB
+- /:item/sell - sell specified quantity of "item" in DB
+Expired items are deleted from DB by a cron job running once daily.
+Reach out to me for more details.
 
 ## Usage
 1. This API is fed from a POSTGRESQL Database. The connection string for this Databse is read from the "DATABASE_URL" environment variable which should be provided in the deployment environment. The API is designed to inititialize all its required DB utilities (in code) including creating an "items" table (if none exists). For this reason, if you are connecting a DB to this API for the first time, please make sure no "items" table already exists in the Database. The API will not overwrite this table and will instead attempt to feed from it which may lead to unnecessary errors.
@@ -23,8 +29,3 @@ npm run build
 `
 npm run start
 `.
-
-## Public URL
-This API is hosted publicly on the Heroku Cloud Infrastructure [here](https://dcs-ta-bem202103.herokuapp.com/).
-
-Please note that the this is hosted via a Hobbyist Heroku account. As such the guaranteed availability is only 99.95% (in case you encounter any downtime while testing).
